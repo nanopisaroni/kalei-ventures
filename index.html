@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kalei Ventures — AI-Powered Startup Investments</title>
-  <meta name="description" content="Kalei Ventures invests in AI-powered startups that demonstrate tangible, near-term potential for real-world client engagement.">
+  <title>Kalei Ventures — VC in AI-Powered Latin American Startups</title>
+  <meta name="description" content="Kalei Ventures is a venture capital fund investing in Latin American startups committed to innovative solutions in emerging markets, with a focus on international expansion and category leadership.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23070e18' rx='6'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Montserrat' font-weight='800' font-size='18' fill='%2358c6D0'%3EK%3C/text%3E%3C/svg%3E">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f8f8f5;
-      color: #1a1a1a;
+      font-family: 'Montserrat', 'Arial', sans-serif;
+      background: #070e18;
+      color: #e8e4dc;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
@@ -24,134 +25,232 @@
     /* Navigation */
     nav {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 20px 0; border-bottom: 1px solid #e8e8e5;
+      padding: 20px 0; border-bottom: 1px solid rgba(88, 198, 208, 0.15);
     }
-    nav .logo { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; }
-    nav .logo span { color: #c9a23c; }
+    nav .logo { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; color: #fff; }
+    nav .logo span { color: #58c6D0; }
     nav .nav-links { display: flex; gap: 32px; align-items: center; }
-    nav a { text-decoration: none; color: #555; font-size: 14px; font-weight: 500; transition: color .2s; }
-    nav a:hover { color: #1a1a1a; }
+    nav a { text-decoration: none; color: #8899a0; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; transition: color .2s; }
+    nav a:hover { color: #58c6D0; }
 
     /* Hero */
     .hero {
-      padding: 100px 0 80px;
-      background: linear-gradient(180deg, #f8f8f5 0%, #f0efe8 100%);
+      padding: 120px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(88, 198, 208, 0.06) 0%, transparent 70%);
+      pointer-events: none;
     }
     .hero h1 {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-size: clamp(40px, 6vw, 64px);
-      font-weight: 400;
+      font-size: clamp(38px, 5.5vw, 56px);
+      font-weight: 700;
       line-height: 1.1;
       letter-spacing: -0.02em;
       max-width: 800px;
       margin-bottom: 24px;
+      color: #fff;
     }
-    .hero h1 em { font-style: italic; color: #c9a23c; }
+    .hero h1 span { color: #58c6D0; }
+    .hero h1 em { font-style: normal; color: #F48630; }
     .hero p {
-      font-size: 18px; color: #555;
-      max-width: 600px; line-height: 1.7;
-      margin-bottom: 40px;
+      font-size: 16px; color: #8899a0;
+      max-width: 580px; line-height: 1.8;
+      margin-bottom: 40px; font-weight: 400;
     }
-    .hero-actions {
-      display: flex; gap: 16px; flex-wrap: wrap;
-    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
-      background: #1a1a1a; color: #fff;
+      background: #58c6D0; color: #070e18;
       padding: 14px 32px; border-radius: 8px;
-      font-size: 15px; font-weight: 600;
+      font-size: 14px; font-weight: 700;
       text-decoration: none; transition: all .2s;
     }
-    .btn-primary:hover { background: #333; transform: translateY(-1px); }
+    .btn-primary:hover { background: #7dd4db; transform: translateY(-1px); box-shadow: 0 4px 20px rgba(88, 198, 208, 0.3); }
     .btn-secondary {
       display: inline-flex; align-items: center; gap: 8px;
-      background: transparent; color: #1a1a1a;
+      background: transparent; color: #e8e4dc;
       padding: 14px 32px; border-radius: 8px;
-      border: 1px solid #d4d4d0;
-      font-size: 15px; font-weight: 500;
+      border: 1px solid rgba(232, 228, 220, 0.2);
+      font-size: 14px; font-weight: 500;
       text-decoration: none; transition: all .2s;
     }
-    .btn-secondary:hover { border-color: #999; }
+    .btn-secondary:hover { border-color: #58c6D0; color: #58c6D0; }
 
     /* Section common */
     section { padding: 80px 0; }
-    section.alt { background: #f3f2eb; }
     .section-label {
-      font-size: 12px; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 1.5px; color: #c9a23c; margin-bottom: 12px;
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2px; color: #58c6D0; margin-bottom: 12px;
     }
     .section-title {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-size: 36px; font-weight: 400;
+      font-size: clamp(28px, 3.5vw, 36px);
+      font-weight: 700;
       margin-bottom: 16px; line-height: 1.2;
+      color: #fff;
     }
     .section-desc {
-      font-size: 16px; color: #666; max-width: 560px;
-      margin-bottom: 48px; line-height: 1.7;
+      font-size: 15px; color: #8899a0; max-width: 580px;
+      margin-bottom: 48px; line-height: 1.8;
     }
 
     /* Thesis */
     .thesis-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
     }
     .thesis-card {
-      background: #fff; padding: 32px; border-radius: 12px;
-      border: 1px solid #e8e8e5;
+      background: rgba(255,255,255,0.03);
+      padding: 32px; border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: all .2s;
     }
+    .thesis-card:hover { border-color: rgba(88, 198, 208, 0.3); background: rgba(88, 198, 208, 0.05); }
     .thesis-card .num {
-      font-family: 'Instrument Serif', serif;
-      font-size: 48px; color: #c9a23c; line-height: 1;
-      margin-bottom: 12px;
+      font-weight: 800; font-size: 36px; color: #58c6D0; line-height: 1;
+      margin-bottom: 16px; opacity: 0.6;
     }
-    .thesis-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
-    .thesis-card p { font-size: 14px; color: #666; line-height: 1.6; }
+    .thesis-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: #fff; }
+    .thesis-card p { font-size: 13px; color: #8899a0; line-height: 1.7; }
+
+    /* Portfolio */
+    .portfolio-grid {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
+    }
+    .portfolio-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+      transition: all .2s;
+    }
+    .portfolio-card:hover {
+      border-color: rgba(88, 198, 208, 0.3);
+      background: rgba(88, 198, 208, 0.05);
+      transform: translateY(-2px);
+    }
+    .portfolio-card .logo-wrapper {
+      width: 64px; height: 64px;
+      border-radius: 14px;
+      margin: 0 auto 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 20px; color: #fff;
+    }
+    .portfolio-card .company-logo-img {
+      width: 100%; height: 100%;
+      object-fit: contain;
+      border-radius: 14px;
+    }
+    .portfolio-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; color: #fff; }
+    .portfolio-card .tag {
+      font-size: 10px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(88, 198, 208, 0.1);
+      color: #58c6D0;
+      margin-top: 8px;
+    }
 
     /* Focus areas */
     .focus-grid {
-      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
     }
     .focus-card {
-      background: #fff; padding: 28px; border-radius: 12px;
-      border: 1px solid #e8e8e5;
+      background: rgba(255,255,255,0.03);
+      padding: 28px; border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: all .2s;
     }
-    .focus-card .icon { font-size: 28px; margin-bottom: 16px; }
-    .focus-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
-    .focus-card p { font-size: 13px; color: #666; line-height: 1.6; }
+    .focus-card:hover { border-color: rgba(244, 134, 48, 0.3); background: rgba(244, 134, 48, 0.04); }
+    .focus-card .icon { font-size: 24px; margin-bottom: 14px; }
+    .focus-card h3 { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: #fff; }
+    .focus-card p { font-size: 12px; color: #8899a0; line-height: 1.7; }
+
+    /* Stats bar */
+    .stats {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+      margin-bottom: 60px;
+    }
+    .stat-item { text-align: center; }
+    .stat-item .num {
+      font-size: 36px; font-weight: 800; color: #58c6D0;
+      line-height: 1; margin-bottom: 8px;
+    }
+    .stat-item .label {
+      font-size: 12px; color: #8899a0; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
 
     /* Contact */
     .contact-box {
-      background: #1a1a1a; color: #f0ede5;
+      background: linear-gradient(135deg, rgba(88, 198, 208, 0.08) 0%, rgba(195, 96, 57, 0.08) 100%);
+      border: 1px solid rgba(88, 198, 208, 0.15);
       padding: 48px; border-radius: 16px;
       display: flex; justify-content: space-between; align-items: center;
       gap: 32px; flex-wrap: wrap;
     }
     .contact-box h2 {
-      font-family: 'Instrument Serif', serif;
-      font-size: 28px; font-weight: 400;
+      font-size: 24px; font-weight: 700; color: #fff;
+      margin-bottom: 8px;
     }
-    .contact-box p { color: #999; font-size: 14px; margin-top: 8px; }
+    .contact-box p { color: #8899a0; font-size: 14px; }
     .contact-box .btn-light {
       display: inline-flex; align-items: center; gap: 8px;
-      background: #f0ede5; color: #1a1a1a;
+      background: #58c6D0; color: #070e18;
       padding: 14px 32px; border-radius: 8px;
-      font-size: 15px; font-weight: 600; text-decoration: none;
+      font-size: 14px; font-weight: 700; text-decoration: none;
       transition: all .2s; flex-shrink: 0;
     }
-    .contact-box .btn-light:hover { background: #fff; }
+    .contact-box .btn-light:hover { background: #7dd4db; box-shadow: 0 4px 20px rgba(88, 198, 208, 0.3); }
+
+    /* About section */
+    .about-text {
+      font-size: 15px; color: #8899a0; line-height: 1.8;
+      max-width: 700px;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(88, 198, 208, 0.3), transparent);
+      margin: 0 auto;
+      max-width: 1100px;
+    }
 
     /* Footer */
     footer {
-      padding: 32px 0; border-top: 1px solid #e8e8e5;
-      font-size: 13px; color: #999;
+      padding: 40px 0;
+      font-size: 12px; color: #5a6a70;
       display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+      border-top: 1px solid rgba(255,255,255,0.04);
     }
+    footer a { color: #58c6D0; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
 
     /* Responsive */
     @media (max-width: 768px) {
-      nav .nav-links { gap: 16px; }
+      .hero { padding: 80px 0 60px; }
       .thesis-grid { grid-template-columns: 1fr; }
+      .portfolio-grid { grid-template-columns: 1fr 1fr; }
       .focus-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+      nav .nav-links { gap: 16px; }
+      nav a { font-size: 11px; }
       .contact-box { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -162,8 +261,9 @@
   <nav>
     <div class="logo">Kalei<span> Ventures</span></div>
     <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="#thesis">Thesis</a>
-      <a href="#focus">Focus</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -172,21 +272,68 @@
 <!-- Hero -->
 <section class="hero">
   <div class="container">
-    <h1>We invest in AI that <em>actually works</em> — for real clients, right now.</h1>
-    <p>Kalei Ventures backs AI-powered startups with tangible, near-term potential for real-world client engagement. Our focus is on founders deploying artificial intelligence to solve concrete problems with measurable impact.</p>
+    <h1>Investing in <span>AI-powered</span> startups that build the <em>next generation</em> of Latin American category leaders.</h1>
+    <p>Kalei Ventures backs exceptional founders deploying artificial intelligence to solve concrete problems — with real clients, measurable impact, and a clear path to becoming global category leaders from Latin America.</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Get in touch →</a>
-      <a href="#thesis" class="btn-secondary">Our thesis</a>
+      <a href="#portfolio" class="btn-primary">View portfolio →</a>
+      <a href="#about" class="btn-secondary">About us</a>
     </div>
   </div>
 </section>
+
+<div class="divider"></div>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">About</div>
+    <h2 class="section-title">Kalei Ventures</h2>
+    <p class="about-text">
+      Kalei stands for <strong>Kaleidoscope</strong> — a symbol of the diversity of thought, background, ethnicity and gender that defines our team. We are a venture capital fund investing in Latin American startups that are committed to applying innovative solutions in emerging markets, with a clear focus on international expansion and category leadership.
+    </p>
+    <p class="about-text" style="margin-top: 16px;">
+      With <strong>18 portfolio companies</strong> across Argentina, Mexico, Colombia, Chile, Brazil, Uruguay, and the United States, we perform deal sourcing across the region and back founders at the intersection of technical capability and commercial viability.
+    </p>
+
+    <div class="stats" style="margin-top: 48px;">
+      <div class="stat-item">
+        <div class="num">18</div>
+        <div class="label">Portfolio Companies</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">7</div>
+        <div class="label">Countries</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">3</div>
+        <div class="label">Focus Verticals</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Portfolio -->
+<section id="portfolio">
+  <div class="container">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Our companies</h2>
+    <p class="section-desc">We back founders building AI-powered startups across fintech, health, logistics, agtech, and more — from pre-seed to Series A.</p>
+    <div class="portfolio-grid" id="portfolio-grid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
 
 <!-- Thesis -->
 <section id="thesis">
   <div class="container">
     <div class="section-label">Investment Thesis</div>
     <h2 class="section-title">What we look for</h2>
-    <p class="section-desc">We invest at the intersection of technical capability and commercial viability — where AI meets actual customer needs.</p>
+    <p class="section-desc">We invest at the intersection of technical capability and commercial viability — where AI meets actual customer needs in Latin America's emerging markets.</p>
     <div class="thesis-grid">
       <div class="thesis-card">
         <div class="num">01</div>
@@ -196,7 +343,7 @@
       <div class="thesis-card">
         <div class="num">02</div>
         <h3>Measurable impact</h3>
-        <p>If the AI can't show a before-and-after in a concrete business metric (cost reduction, revenue lift, time saved), it's not ready. We back what can be measured.</p>
+        <p>If the AI can't show a before-and-after in a concrete business metric — cost reduction, revenue lift, time saved — it's not ready. We back what can be measured.</p>
       </div>
       <div class="thesis-card">
         <div class="num">03</div>
@@ -212,46 +359,7 @@
   </div>
 </section>
 
-<!-- Focus Areas -->
-<section id="focus" class="alt">
-  <div class="container">
-    <div class="section-label">Focus Areas</div>
-    <h2 class="section-title">Where we invest</h2>
-    <p class="section-desc">We concentrate on sectors where AI can create immediate, defensible value for businesses and their customers.</p>
-    <div class="focus-grid">
-      <div class="focus-card">
-        <div class="icon">⚕️</div>
-        <h3>Health & Life Sciences</h3>
-        <p>AI diagnostics, clinical workflow automation, drug discovery acceleration, and telemedicine platforms serving the Latin American market.</p>
-      </div>
-      <div class="focus-card">
-        <div class="icon">💰</div>
-        <h3>Fintech & Insurtech</h3>
-        <p>Credit scoring with alternative data, AI-driven underwriting, fraud detection, and financial inclusion tools for underserved populations.</p>
-      </div>
-      <div class="focus-card">
-        <div class="icon">🏗️</div>
-        <h3>Enterprise SaaS</h3>
-        <p>AI-native tools for CRM, ERP, supply chain, and customer support — from lead scoring to predictive inventory to automated service desks.</p>
-      </div>
-      <div class="focus-card">
-        <div class="icon">🌾</div>
-        <h3>Agtech & Food</h3>
-        <p>Precision agriculture, crop monitoring via satellite/ drone imagery, supply chain optimization, and food safety AI for Latin America's agricultural economy.</p>
-      </div>
-      <div class="focus-card">
-        <div class="icon">🏭</div>
-        <h3>Industrials & Logistics</h3>
-        <p>Predictive maintenance, computer vision for quality control, warehouse robotics coordination, and last-mile delivery optimization.</p>
-      </div>
-      <div class="focus-card">
-        <div class="icon">🌎</div>
-        <h3>Climate & Sustainability</h3>
-        <p>Energy optimization AI, carbon accounting automation, circular economy marketplaces, and climate risk modeling for the region.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="divider"></div>
 
 <!-- Contact -->
 <section id="contact">
@@ -260,7 +368,7 @@
     <div class="contact-box">
       <div>
         <h2>Let's build something real.</h2>
-        <p>If you're building an AI-powered startup with traction, we want to hear from you.</p>
+        <p>If you're building an AI-powered startup with traction in Latin America, we want to hear from you.</p>
       </div>
       <a href="mailto:hello@kaleiventures.com" class="btn-light">hello@kaleiventures.com →</a>
     </div>
@@ -271,9 +379,84 @@
 <div class="container">
   <footer>
     <span>© 2026 Kalei Ventures. Buenos Aires, Argentina.</span>
-    <span>hello@kaleiventures.com</span>
+    <span><a href="mailto:hello@kaleiventures.com">hello@kaleiventures.com</a></span>
   </footer>
 </div>
+
+<script>
+  // Portfolio data
+  const companies = [
+    { name: 'Agroforte', sector: 'Agtech / Fintech', initials: 'AF', color: '#28373D' },
+    { name: 'Belo', sector: 'Crypto', initials: 'BE', color: '#58c6D0' },
+    { name: 'BrainLogic AI', sector: 'AI', initials: 'BA', color: '#F48630' },
+    { name: 'Cucuru', sector: 'Fintech', initials: 'CU', color: '#28373D' },
+    { name: 'Curador AI', sector: 'AI', initials: 'CA', color: '#58c6D0' },
+    { name: 'Elery', sector: 'Healthtech', initials: 'EL', color: '#F48630' },
+    { name: 'Enigma.art', sector: 'Web 3', initials: 'EN', color: '#28373D' },
+    { name: 'Favs', sector: 'Social', initials: 'FA', color: '#58c6D0' },
+    { name: 'Freatz', sector: 'AI', initials: 'FR', color: '#F48630' },
+    { name: 'Gaida', sector: 'Gen AI', initials: 'GA', color: '#28373D' },
+    { name: 'Hunty', sector: 'HR', initials: 'HU', color: '#58c6D0' },
+    { name: 'Kargoru', sector: 'Logistics', initials: 'KA', color: '#c36039' },
+    { name: 'Moova', sector: 'Logistics', initials: 'MO', color: '#28373D' },
+    { name: 'Mudafy', sector: 'Proptech', initials: 'MU', color: '#58c6D0' },
+    { name: 'Mudango', sector: 'Logistics', initials: 'MD', color: '#F48630' },
+    { name: 'Nilus', sector: 'E-commerce', initials: 'NI', color: '#28373D' },
+    { name: 'Qurrent', sector: 'AI & Analytics', initials: 'QU', color: '#58c6D0' },
+    { name: 'Toket', sector: 'Blockchain', initials: 'TO', color: '#F48630' }
+  ];
+
+  // Try Clearbit logos, fall back to styled initials
+  const domains = {
+    'Agroforte': 'agroforte.com',
+    'Belo': 'belo.app',
+    'BrainLogic AI': 'brainlogic.ai',
+    'Cucuru': 'cucuru.com',
+    'Curador AI': 'curador.ai',
+    'Elery': 'elery.com',
+    'Enigma.art': 'enigma.art',
+    'Favs': '',
+    'Freatz': 'freatz.com',
+    'Gaida': '',
+    'Hunty': 'hunty.com',
+    'Kargoru': 'kargoru.com',
+    'Moova': 'moova.io',
+    'Mudafy': 'mudafy.com',
+    'Mudango': 'mudango.com',
+    'Nilus': 'nilus.com',
+    'Qurrent': 'qurrent.com',
+    'Toket': 'toket.io'
+  };
+
+  const grid = document.getElementById('portfolio-grid');
+
+  companies.forEach((c, i) => {
+    const card = document.createElement('div');
+    card.className = 'portfolio-card';
+
+    const domain = domains[c.name] || '';
+    const logoUrl = domain ? `https://logo.clearbit.com/${domain}` : '';
+
+    let logoHtml;
+    if (domain) {
+      logoHtml = `<img class="company-logo-img" src="${logoUrl}" alt="${c.name} logo" loading="lazy" onerror="this.onerror=null;this.parentNode.innerHTML='<div style=\\'width:64px;height:64px;border-radius:14px;background:${c.color};display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;color:#fff;margin:0 auto 16px\\'>${c.initials}</div>'">`;
+    } else {
+      logoHtml = `<div class="logo-wrapper" style="background:${c.color}">${c.initials}</div>`;
+    }
+
+    card.innerHTML = `
+      <div class="logo-wrapper" style="background:${c.color}; overflow:hidden;">
+        ${logoHtml}
+      </div>
+      <h3>${c.name}</h3>
+      <div class="tag">${c.sector}</div>
+    `;
+    grid.appendChild(card);
+  });
+
+  // Fix: for stealth companies without domain, the onerror won't trigger
+  // We already handled them above
+</script>
 
 </body>
 </html>
